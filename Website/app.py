@@ -13,11 +13,11 @@ wsgi_app = app.wsgi_app
 @app.route('/')
 def home():
     """Renders a sample page."""
-    return "The Home Page will go here"
+    return render_template("home.html")
 
 @app.route('/about/')
 def about():
-    return "The About Content will go here"
+    return render_template("about.html")
     
 
 if __name__ == '__main__':
