@@ -1,8 +1,3 @@
-"""
-This script runs the application using a development server.
-It contains the definition of routes and views for the application.
-"""
-
 from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -12,7 +7,6 @@ wsgi_app = app.wsgi_app
 
 @app.route('/')
 def home():
-    """Renders a sample page."""
     return render_template("home.html")
 
 @app.route('/about/')
