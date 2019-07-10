@@ -23,3 +23,5 @@ if __name__ == '__main__':
         PORT = 5555
     app.run(HOST, PORT)
 
+print('This is a test')
+
